@@ -10,14 +10,13 @@
 </head>
 
 <body>
-    <h1>Carrito de la compra</h1>
-    <form action="index.php" method="post">
+    <h1>Carrito de <?= $_SESSION['user']; ?></h1>
 
-        <?= $tableBody; ?>
+    <form action="user.php" method="post">
+        <?= $userTable; ?>
         <button type="submit">Añadir</button>
-        <a href="user.php">Ver Carrito</a>
+        <a href="index.php">Inicio</a>
     </form>
-
 </body>
 
 </html>
